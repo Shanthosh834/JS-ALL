@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 2 - Js Can Change Atteribut </title>
+</head>
+<body>
+    <h1> This is Js </h1>
+
+    <button onClick="onLight()"> Turn On The Light </button>
+
+    <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+    <button onClick="ofLight()"> Turn Off The Light </button>
+
+    <script>
+        function onLight() {
+            document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'
+        }
+
+        function ofLight() {
+            document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'
+        }
+    </script>
+</body>
+</html>

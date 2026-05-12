@@ -1,0 +1,56 @@
+  1. Intro    
+    
+    * JavaScript is the programming language of the web.
+
+    * It can calculate, manipulate and validate data and js can accept both single and double quotes too.
+
+    * It can update and change both HTML and CSS.
+
+        1. One of the js html metho is getElementById()
+            * It used to find html element by id and change the element content            -> Look At Workout 1 - inter 1
+
+        2. Js can change the html atteribut too
+            * Can change the same 1 as imnage           -> Look At Workout 1 - inter 2
+
+        3. Js can change Css styles too
+            * can change the existuing p tag etxts size -> Look At Workout 1 - inter 3
+
+        4. Js can hide html elements too
+            * can hide by useing display style          -> Look At Workout 1 - inter 4
+
+        5. Js can show html elements too
+            * can display or show elements with display property style      -> Look At Workout 1 - inter 5
+
+
+2. Js Where To
+
+    * In html, js code will be implemented in between the <script> Js Code </script> tag
+        * <script>
+            document.getElementById("demo").innerHTML = "My First JavaScript";
+          </script>
+
+    * Js Functions and Events
+        * function is a block of code which called when it neeed to get executed
+            * for example: functions can be called when an Event(a signal that something specific has happened in the browser, like mouse click) occured
+
+        ******* latter in chapter on detial
+
+    * Js in Head or Body (Internal Js)
+        * Html page can have any number of scripts in it, scripts can be place in head or boddy or both all are correct only
+
+        * Inside style at ending part script
+
+        * inside body ending part script
+
+        * Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display.
+            * because, browsers parse the html sequential from top to bottom when encounters script it will wait for some time or pauses html parsing and
+              execute the script fully before moving on the next html elemnts
+
+        * writing js on head or body is considered to be the internal js
+
+    * External Js
+        * the scripts can only place on that external js file only - external scrpyt.js file will have the script functions
+
+        * 
+
+            

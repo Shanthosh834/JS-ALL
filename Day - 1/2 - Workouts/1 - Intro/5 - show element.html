@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 5 - show element </title>
+</head>
+<body>
+    <h1> Js Topics </h1>
+
+    <p> This is the first texts to be displayed </p>
+
+    <p id="demo" style="display: none"> This is the block texts yet to be displayed </p>
+
+    <button onClick="disp()"> Click Me </button>
+
+    <script>
+        function disp() {
+            document.getElementById('demo').style.display='block'
+        }
+    </script>
+</body>
+</html> 

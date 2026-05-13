@@ -1,0 +1,137 @@
+    9. Js let
+        * The let keyword was introduced in ES6 (2015), Variables declare with let will be having Block Scope
+
+        * Variables declared with let must be Declared before use, Variables declared with let cannot be Redeclared in the same scope
+
+        1. Block Scope
+            * Before ES6(2015), Js dosent have Block Scope
+
+            * Js had Global Scope and Function Scope
+
+            * ES6 introduced the two new Js keywords, let and const these 2 keywords provide Block Scope
+
+            * Variables declared inside a { } block cannot be accessed from outside the block:
+            
+            * Example: {
+                         let x = 2;
+                       }
+                       // x can NOT be used here 
+
+
+        2. Function Scope
+            * Inside a function all variables declared with var, const or let have function scope
+
+            * Example: function myfunction() {
+                                             var x = 1;
+                                             let y = 2;
+                                             const z = 3;
+                                             }
+                                             //x can NOT be used here
+                                             //y can NOT be used here
+                                             //z can NOT be used here
+
+        
+        3. Global Scope
+            * variables with var have global scope, and variables with var keyword does not have black scope
+
+            * Variables declared with varinside a { } block can be accessed from outside the block:
+
+            * Example: {
+                         var x = 2;
+                       }
+                       // x CAN be used here 
+
+        4. Cannot be Redeclared
+            * Variables defined with let can not redeclare
+
+            * let x = "John Doe";
+
+              let x = 0;
+
+              * With let you can not do this:
+
+              * Variables defined with var can be redeclared.
+
+              * var x = "John Doe";
+
+                var x = 0;
+
+        5. Redeclaring Variables
+            * Redeclaring with var keyword can bring problems
+
+            * Redeclaring a variable inside a block will also redeclare the variable outside the block
+
+            * Example: var x = 10;
+                       // Here x is 10
+
+                       {
+                       var x = 2;
+                       // Here x is 2
+                       }
+                       
+                       // Here x is 2 
+
+            * Redeclaring a variable using the let keyword can solve this problem.
+
+            * Redeclaring a variable inside a block will not redeclare the variable outside the block
+
+            * Example:  let x = 10;
+                        // Here x is 10
+
+                        {
+                        let x = 2;
+                        // Here x is 2
+                        }
+
+                        // Here x is 10 
+
+
+        6. What is Good?
+
+            * let and const have block scope.
+
+            * let and const can not be redeclared.
+
+            * let and const must be declared before use.
+
+            * let and const does not bind to this.
+
+            * let and const are not hoisted.
+
+            
+        7. What is Not Good?
+
+            * var does not have to be declared.
+
+            * var is hoisted.
+
+            * var binds to this.
+
+
+        8. Redeclaring
+            * Redeclaring a JavaScript variable with var is allowed anywhere in a program:
+
+            * With let, redeclaring a variable in the same block is NOT allowed:
+
+            * Example: var x = 2;   // Allowed
+                       let x = 3;   // Not allowed
+                       {
+                       let x = 2;   // Allowed
+                       let x = 3;   // Not allowed
+                       }
+                       
+                       {
+                       let x = 2;   // Allowed
+                       var x = 3;   // Not allowed
+                       }
+
+                * Redeclaring a variable with let, in another block, IS allowed:
+
+                * Example: let x = 2;   // Allowed
+                           {
+                           let x = 3;   // Allowed
+                           }
+                           
+                           {
+                           let x = 4;    // Allowed
+                           } 

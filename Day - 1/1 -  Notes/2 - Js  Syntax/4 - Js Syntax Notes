@@ -1,0 +1,61 @@
+4 - JS Syntax
+
+    1. Syntax Rules
+        * This is the syntax rules how programs must be written
+
+        * letx = 5;     - This is how to ddeclare Variabl;es
+
+        * let z = x + y;       - This is how to Compute Values
+
+        * // ....... <!-- --!>  - This is just the comments
+
+
+    2. Js Values
+        * Js syntax defines 2 types of values
+            1. Literals ( Fixed Values )
+            2. Variables ( Variable Values )
+
+            1. Js Literals
+                * The important syntax for literals ( Fixed Values ) 
+
+                    * Numbers are written with or without decimals       -> Look At Workout - 3rd Js Syntax Folder - 1st file
+
+                    * Strings are texts wriiten with single or double quotes    -> Look At Workout - 3rd Js Syntax Folder - 1st file
+
+            2. Js Variables
+                * Variables are the containers to store the data values     -> Look At Workout - 3rd Js Syntax Folder - 2nd file
+
+                * Variables must be identified with unique names
+
+
+    3. Js Keywords
+        * Js keywords are used to define actions to be performed
+
+        * The let and const Keywords creates variables      -> Look At Workout - 3rd Js Syntax Folder - 2nd file
+
+        * Js keywords are case-sensitive we cannot give like Let or LET just we xcan give as let
+
+
+
+    4. Js Identifiers
+        * An Identifier is the name you given to the variable
+
+        * Rules for Ientifiers
+            * Must start with a letter, _, or $
+            * Can have digits after First character
+            * Cannot be a Keyword like const, let, etc
+            * Are case-sensitive
+
+    5. Js Operators
+        * Js assignment opeerator assigns value to variables ( = )      -> Look At Workout - 3rd Js Syntax Folder - 3rd file
+
+        * Assignment Operator have (+, -, /, %)
+
+    
+    6. Js Expressions
+        * An expression is a combination of Values, Variables, and Operations, which have Values
+
+        * Examples: 
+            * (5 + 6) * 10 evaluates to 110:,        -> Look At Workout - 3rd Js Syntax Folder - 3rd file
+            * Expressions can also contain variable:     -> Look At Workout - 3rd Js Syntax Folder - 3rd file
+            * "John" + " " + "Doe", evaluates to "John Doe":

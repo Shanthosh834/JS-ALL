@@ -1,0 +1,22 @@
+  1. Intro    
+    
+    * JavaScript is the programming language of the web.
+
+    * It can calculate, manipulate and validate data and js can accept both single and double quotes too.
+
+    * It can update and change both HTML and CSS.
+
+        1. One of the js html metho is getElementById()
+            * It used to find html element by id and change the element content            -> Look At Workout - 1st file
+
+        2. Js can change the html atteribut too
+            * Can change the same 1 as imnage           -> Look At Workout - 2nd file
+
+        3. Js can change Css styles too
+            * can change the existuing p tag etxts size -> Look At Workout - 3rd file
+
+        4. Js can hide html elements too
+            * can hide by useing display style          -> Look At Workout - 4th file
+
+        5. Js can show html elements too
+            * can display or show elements with display property style      -> Look At Workout - 5th file

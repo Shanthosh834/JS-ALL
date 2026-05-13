@@ -1,0 +1,76 @@
+3. Js Output
+    * Js Display Possiblities - Js can display data in different ways:
+
+    1. Writing into Html elemet, using innerHTML or innerText
+    2. Writing into Html Output using document.write()
+    3. Writing into an alert box, using window.alert()
+    4. Writing into browser console, using console.log()
+    5. Prining the page, using window.print()
+
+    1. Writing into Html elemet, using innerHTML or innerText
+        1. innerHTML
+            * To access an Html element we can use the document.getElementById(Id) method
+
+            * Using the id attribute identify the Html element
+
+            * then use innerHTML to change the Html content of the Html element
+
+            * changing the innerHTML property of an Html element is common way in displaying data in Html
+
+            * if p tage with id has b tag and other tags it will all get affected
+
+            * Use innerHTML when you want to change an HTML element     -> Look At Workout - 2nd Js Output Folder - 1.1 file
+
+        2. innerText
+            * same as innerHTML but here only text is displayed where as innerHTML all the element like 
+              p, div, etc can display but here only text displays
+
+            * Then use the innerText property to change the inner text of the HTML element
+
+            * if p tage with id has b tag and other tags only the texts get affected
+
+            * Use innerText when you only want to change the plain text     -> Look At Workout - 2nd Js Output Folder - 1.2 file
+
+    2. Writing into Html Output using document.write()
+        * we will be using document.write() for testing purpose     
+
+        * During page load	at 1st try - Adds content at that spot ✅ (again page relad if we write document.write all erases)
+            -> Look At Workout - 2nd Js Output Folder - 2.1 file
+
+        * After page loads after onclick or second time - DELETES entire page ❌
+            -> Look At Workout - 2nd Js Output Folder - 2.2 file
+
+        * Using document.write() after an HTML document is loaded, will delete all existing HTML
+
+        * Rule: Never use document.write() in production code. Use innerHTML or textContent instead!
+
+        * The document.write() method should only be used for testing.
+
+    3. Writing into an alert box, using window.alert()
+        * we can use alert box to display       -> Look At Workout - 2nd Js Output Folder - 3.1 file
+
+        * just like alert box we will use window.alert(test or math 5 + 2)  -> Look At Workout - 2nd Js Output Folder - 3.1 file
+
+        * we can even skip the window keyword, in js the winow object is global scope obj.  This means variables, props, methods default belong to the window obj.
+
+        * js automatically takes window obj automatically
+            * example: if i write alert() or console.log() or let x = 5 --> js automatically takes it as window.alert() and 	window.console.log() and window.x = 5 (in browser)
+
+            * The window is IMPLIED. You don't need to write it     -> Look At Workout - 2nd Js Output Folder - 3.2 file
+
+            * but on node.js widows dosent exists so 
+                * console.log("Works");     // ✅ Works
+                  window.console.log("No"); // ❌ Error! window doesn't exist in Node.js
+
+                  * This is why your React Native code doesn't use window - there's no browser window!
+
+            * In browser JavaScript, ALWAYS skip window. It's cleaner, shorter, and standard practice, window only on frontend( winiow alrady exists, can skip without giving window) not at backemd or react native
+            
+        
+        4. Writing into browser console, using console.log()
+            * For debugging prposes, you can call the console.log() on browser conosle      -> Look At Workout - 2nd Js Output Folder - 4th file
+
+            * later more on debuggin on further
+
+        5. Prining the page, using window.print()
+            * just iniisde the onClick just use print() or window.print() to get printed we can even ommit window as it automatically has

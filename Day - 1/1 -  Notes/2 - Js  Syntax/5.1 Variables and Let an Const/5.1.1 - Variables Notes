@@ -1,0 +1,55 @@
+    8. Js Variables
+        * Variables are containers to store the data values
+
+        * js variables are eclared in 4 ways:
+
+            * Modern Js
+                1. Using Let
+                2. Using Const
+
+            * Older Js
+                3. Using Var ( Not Recomended )
+                4. Automatically ( Not Recomended )
+
+        1. Using Let
+            * let x = 5;let y = 6;let z = x + y;
+
+        2. Using Const
+            * const x = 5;const y = 6;const z = x + y;
+
+            Example: const price1 = 5;
+                     const price2 = 6;
+                     let total = price1 + price2;
+
+                * The two variables price1 and price2 are declared with the const keyword.
+
+                * The values of price1 and price2 cannot be changed.
+                
+                * The variable total is declared with the let keyword.
+                
+                * The value of total can be changed.
+
+
+        3. Automatically ( Not Recomended )
+            * It's a good programming practice to declare all variables at the beginning of a script
+
+            *  x = 5;
+               y = 6;
+               z = x + y;
+
+        4. Using Var ( Not Recomended )
+            * The var keyword was used in all Js code before 2015
+
+            * The let and const keywords were new to Js in 2015
+
+            * When to Use var, let, or const?
+
+                1. Always declare variables
+                
+                2. Always use const if the value should not be changed
+                
+                3. Always use const if the type should not be changed (Arrays and Objects)
+                
+                4. Only use let if you cannot use const
+                
+                5. Never use var if you can use let or const.

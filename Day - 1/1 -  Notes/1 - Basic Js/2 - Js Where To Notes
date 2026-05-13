@@ -1,0 +1,70 @@
+2. Js Where To
+
+    * In html, js code will be implemented in between the <script> Js Code </script> tag
+        * <script>
+            document.getElementById("demo").innerHTML = "My First JavaScript";
+          </script>
+
+    * Js Functions and Events
+        * function is a block of code which called when it neeed to get executed
+            * for example: functions can be called when an Event(a signal that something specific has happened in the browser, like mouse click) occured
+
+        ******* latter in chapter on detial
+
+    * Js in Head or Body (Internal Js)
+        * Html page can have any number of scripts in it, scripts can be place in head or boddy or both all are correct only
+
+        * Inside style at ending part script
+
+        * inside body ending part script
+
+        * Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display.
+            * because, browsers parse the html sequential from top to bottom when encounters script it will wait for some time or pauses html parsing and
+              execute the script fully before moving on the next html elemnts
+
+        * writing js on head or body is considered to be the internal js
+
+    * External Js
+        * the scripts can only place on that external js file only - external scrpyt.js file will have the script functions
+
+        * External scripts are practical when same code is used in many webpages
+
+        * ends with .js extension and to use external js put put name of the script file in the src atteribut inside the <Script> tag
+            * like <Script src = "myScript.js"></Script>
+
+            * the external js file should not have the script tag       -> Look At Workout - 6th Folder - 1st Basic Folder
+
+        * External JavaScript Advantages
+            * In external js there is some advantages:
+                * It seperates html and code
+                * It makes Html and Js code easier to read and maintain
+                * Cached JavaScript files can speed up page loads
+
+            * To add several script files to one page  - use several script tags:
+                * Expample: <script src="myScript1.js"></script>
+                            <script src="myScript2.js"></script>
+
+        * External References:
+            * An External Script can be referenced with 3 ways:
+                1. With a Full Url (a full web address)
+                2. With a file path (like /js/)
+                3. Without any path
+
+            1. With a Full Url (a full web address)
+                * Here, we are borrowing Js file that someone else created and hosted on thier server
+
+                * just call the url inside the script tag   -> Look At Workout - 6th Folder - 2nd Reference Folder - 1st Folder
+
+                * It need internet to access their url
+            2. With a file path (like /js/)
+                * Here, we are hosting it onout computer or lap on local
+
+                * Here main folder -> html -> sub folder -> scrip ---> inside html inside script src subfolder/script.js only works ( or )
+                  All project files MUST be inside ONE main folder! 
+
+                * It work offline no internet needed        -> Look At Workout - 6th Folder - 2nd Reference Folder - 2nd Folder
+
+            3. Without any path
+                * its like the external script 1 main Folder inside it html and cript inside html script src inside script name
+
+                * same as basic     -> Look At Workout - 6th Folder - 2nd Reference Folder - 3rd Folder

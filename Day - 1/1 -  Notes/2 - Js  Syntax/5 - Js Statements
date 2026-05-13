@@ -1,0 +1,83 @@
+5 - Js Statements
+
+    1. Js Programs
+        * The compuetr instructions are set to be programs
+
+        * and this computer instructions or programs are set to be the statements Js will be having multiple statements
+        
+        * and these statements are ment to to executed one by one as order
+
+        * In HTML, JavaScript programs are executed by the web browser.
+
+
+    2. Js Statements
+        * let x, y, z;    // Statement 1
+        * x = 5;          // Statement 2
+        * y = 6;          // Statement 3
+        * z = x + y;      // Statement 4
+
+        * Js Statements contains of Values, Operators, Expression, Keywords...
+
+        * Example: document.getElementById("demo").innerHTML = "Hello Dolly."; 
+
+        * Comination of js Statements are Calle as Js Code
+
+        * Semicolons:
+            * Semicolon Seperates Js Statements, Add Semicolon at the end of each executable statement
+
+            * Examples: let a, b, c;  // Declare 3 variables
+                        a = 5;        // Assign the value 5 to a
+                        b = 6;        // Assign the value 6 to b
+                        c = a + b;    // Assign the sum of a and b to c
+
+            * We can delare or seperate with semicolon as single line too as like a = 5; b = 6; c = a + b;
+
+            * On the web, you might see examples without semicolons.  Ending statements with semicolon is not required, but highly recommended
+
+    3. Js White Space
+        * Js ignores multiple spaces, You can add white space to your script to make it more readable
+
+        * Like: let person = "Hege";
+          let person="Hege"; 
+
+        * A good practice is to put spaces around operators ( = + - * / ): like let x = y + z;
+
+
+    4. Js Line Length and Line Breaks
+        * For best readability, programmers often like to avoid code lines longer than 80 characters.
+
+        * If a JavaScript statement does not fit on one line, the best place to break it is after an operator
+
+        * Example: document.getElementById("demo").innerHTML = "Hello Dolly!"; 
+
+
+    5. Js Code Blocks
+        * Js statements can be grouped inside code bl;ocks, inside curly braces { ..... }
+
+        * This purposee is used define the statements to be executed together   -> Look At Workout - 3rd Js Syntax Folder - 1st Folder 4th file
+
+
+    6. Js Keywords
+        * JavaScript statements often start with a keyword to identify the JavaScript action to be performed
+
+        * Some of the Keywords are:
+
+        Keyword 	Description
+        var 	    Declares a variable
+        let 	    Declares a block variable
+        const 	    Declares a block constant
+        if 	        Marks a block of statements to be executed on a condition
+        switch 	    Marks a block of statements to be executed in different cases
+        for 	    Marks a block of statements to be executed in a loop
+        function 	Declares a function
+        return 	    Exits a function
+        try 	    Implements error handling to a block of statements
+
+        * JavaScript keywords are reserved words. Reserved words cannot be used as names for variables
+
+    7. Js Comments
+        * comments are used for just the instruction for programmenrs which ignored by the system
+
+        * there is 2 types:
+            1. //   -> this is single Line Comments
+            2. /* ... */    -> This is Multiple Line Comments

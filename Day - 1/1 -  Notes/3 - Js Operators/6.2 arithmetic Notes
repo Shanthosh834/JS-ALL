@@ -1,0 +1,29 @@
+Js Arithmetic Operator
+
+    * Arithmetic Operators are used to perform arithmetic on numbers
+
+    * Example: 
+        let a = 3;
+        let x = (100 + 50) * a;
+
+    * Operator 	Description
+      + 	    Addition
+      - 	    Subtraction
+      * 	    Multiplication
+      ** 	    Exponentiation (square)
+      / 	    Division
+      % 	    Modulus (Division Remainder)
+      ++ 	    Increment
+      -- 	    Decrement
+
+      let x = 5;
+      x--;
+      let z = x; // 4
+
+
+      let x = 5;
+      x++;
+      let z = x; //6
+      
+      let x = 5;
+      let z = x ** 2; // 25 (square)

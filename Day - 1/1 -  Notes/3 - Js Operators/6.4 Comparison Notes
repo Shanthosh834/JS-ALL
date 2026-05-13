@@ -1,0 +1,32 @@
+Comparison Operator
+
+    * Comparison operators are used to compare two values.
+
+    * Comparison operators always return true or false
+
+    Operator 	Description 	    Comparing 	Returns 	
+    == 	        equal to 	        x == 8 	    false 	
+                                    x == 5 	    true 	
+                                    x == "5" 	true 	
+
+    === 	    equal value and     x === 5 	true 	
+                equal type          x === "5" 	false 	
+                 	
+    != 	        not equal 	        x != 8 	    true 	
+
+    !== 	    not equal value or  x !== 5 	false 	
+                not equal type      x !== "5" 	true 	
+                                    x !== 8 	true 	
+
+    > 	        greater than 	    x > 8 	    false 	
+                
+    < 	        less than 	        x < 8 	    true 
+
+    >= 	        greater than or     x >= 8 	    false 	
+                equal to 	
+
+    <= 	        less than or       	x <= 8  	true
+                equal to
+
+
+                * if (age < 18) text = "Too young to buy alcohol";

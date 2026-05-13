@@ -59,3 +59,66 @@
                    typeof "" + "<br>" +
                    typeof "John" + "<br>" + 
                    typeof "John Doe";
+
+        * Example:
+            typeof 0              // Returns "number"
+            typeof 314            // Returns "number"
+            typeof 3.14           // Returns "number"
+            typeof (3)            // Returns "number"
+            typeof (3 + 4)        // Returns "number" 
+
+    2. Js String
+        * String is a series of characters on single or double quotes
+
+        * Example
+            // Using double quotes:
+            let carName1 = "Volvo XC60";
+
+            // Using single quotes:
+            let carName2 = 'Volvo XC60';
+    
+    3. Js Numbers
+        * All jJs numbers are stored as decimal numbers (Floating Points)
+
+        * Numbers can written with or without decimals
+
+        * Example:
+            // With decimals:
+            let x1 = 34.00;
+            
+            // Without decimals:
+            let x2 = 34; 
+
+    4. Exponential Notation
+        * Extra large or small numbers can be written with specific (exponential) Notation
+
+        * Example:
+            let y = 123e5;  // 12300000
+            let z = 123e-5; // 0.00123
+
+    5. Js Booleans
+        * Js booleans have only true or false we will be using comparison operaqtor here
+
+        * like: (==, !=, <, >)
+
+        * Example:
+            (x == 8); // equals false
+            (x != 8); // equals true
+
+    6. Datatype Undefined
+        * In computer programs, variables are often declared without a value. 
+          The value can be something that has to be calculated, or something that will be provided later, like user input
+        * A variable without a value has the datatype Undefined
+
+        * A variable without a value also has the value undefined
+
+        * Example
+            let carName; // Undefined
+
+    7. Empty Values 
+        * An empty value has nothing to do with undefined.
+
+        * An empty string has both a legal value and a type.
+
+        * Example
+            let car = "";    // The value is "", the typeof is "string" 

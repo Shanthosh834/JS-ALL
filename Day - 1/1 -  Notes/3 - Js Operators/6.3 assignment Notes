@@ -1,0 +1,61 @@
+Assignment Operators
+
+    * Assignment operators assign values to JavaScript variables.
+
+    Operator 	Example 	Same As 	Result
+    = 	        x = y 	    x = y 	    x = 5
+    += 	        x += y 	    x = x + y 	x = 15
+    -= 	        x -= y 	    x = x - y 	x = 5
+    *= 	        x *= y 	    x = x * y 	x = 50
+    **=         x **= y     x = x ** y 	x = 100000
+    /= 	        x /= y 	    x = x / y 	x = 2
+    %= 	        x %= y 	    x = x % y 	x = 0
+    : 	        x: 45 	    size.x = 45 x = 45
+
+
+    * Logical Assignment Operators
+        Operator 	Example 	    Result
+        &&= 	    true &&= 10 	x = 10
+        ||= 	    false ||= 10 	x = 10
+        ??= 	    null ??= 10 	x = 10
+
+    * Exponentiation Assignment Operator **=
+        * The Exponentiation Assignment Operator raises a variable to the power of the operand
+
+        * let x = 10;
+          x **= 5; //  100000
+
+    * The &&= Operator
+        * The Logical AND assignment operator is used between two values.
+
+        * If the first value is true, the second value is assigned
+
+        let x = true;
+        let y = x &&= 10; // 10
+
+        let x = false;
+        let y = x &&= 10; // false
+
+    * The ||= Operator
+        * The Logical OR assignment operator is used between two values.
+
+        * If the first value is false, the second value is assigned
+
+        let x = false;
+        let y = x ||= 10; // 10
+
+    * The ??= Operator
+        * The Nullish coalescing assignment operator is used between two values.
+
+        * If the first value is undefined or null, the second value is assigned
+
+        let x;
+        x ??= 10; // 10
+
+    * Spread Operator
+        * The ... operator splits iterables into individual elements
+
+        let text = "12345";
+        let min = Math.min(...text);
+        let max = Math.max(...text); // Minimum is: 1
+                                        Maximum is: 5

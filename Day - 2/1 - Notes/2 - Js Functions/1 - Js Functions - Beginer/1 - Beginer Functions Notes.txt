@@ -1,0 +1,93 @@
+1. Beginer Functions
+
+    * Functions are Code Blocks
+
+    * Functions are reusable code blocks designed to perform a particular task.
+
+    * Functions are executed when they are called or invoked.
+
+    * Functions are fundamental in all programming languages
+
+        1. Why Use Functions
+            * Functions helps with 
+                1. Reuse code (Write once, run many times)
+                2. Organize code into smaller parts
+                3. Make code easier ti read and maintain
+
+
+        2. What does a Function look like
+            * A function can be created with the function keyword, a name, and parentheses.
+
+            * The code to run is written inside curly brackets.
+
+            * Example
+
+                A one liner:
+                    function sayHello() { return "Hello World"; }
+
+                or more common:
+                    function sayHello() {
+                      return "Hello World";
+                    }
+
+            * The function above does not do anything.
+
+            * It has to be called first.
+
+
+        3. Functions Run When You Call Them     -> Reffer 2 Workout - 2 Js Functions - 1 Beginer
+
+            * To run a function, you call it by using its name followed by parentheses like sayHello():
+
+            * () means execute now
+
+        4. Js Function Syntax
+            * function name( p1, p2, ... ) {
+                // code to be executed
+              }
+
+            * The function name follows the naming rules for variables.
+
+            * Optional parameters are listed inside parentheses: ( p1, p2, ... )
+
+            * Code to be executed is listed inside curly brackets: { }
+
+            * Functions can return an optional value back to the caller
+
+                function multiply(a, b) {
+                    return a * b;
+                }
+
+                let result = multiply(4, 3);
+
+
+        5. A Function Can Be Used Many Times        -> Reffer 2 Workout - 2 Js Functions - 1 Beginer
+
+            * A big benefit is that you can call the same function whenever you need it.
+
+            * Example
+                function add(a, b) {
+                  return a + b;
+                }
+
+                let sum1 = add(5, 5);
+                let sum2 = add(50, 50);
+
+            * Note that values returned from functions can be stored in variables.
+
+
+        6. Local Variables      -> Reffer 2 Workout - 2 Js Functions - 1 Beginer
+
+            * Variables declared within a JavaScript function, become LOCAL to the function.
+
+            * Local variables can only be accessed from within the function.
+
+            * Example
+                // code here can NOT use carName
+
+                function myFunction() {
+                  let carName = "Volvo";
+                  // code here CAN use carName
+                }
+
+                // code here can NOT use carName 

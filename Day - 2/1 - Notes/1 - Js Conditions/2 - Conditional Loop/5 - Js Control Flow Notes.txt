@@ -1,0 +1,93 @@
+5. Js Control Flow
+
+    * Control Flow is the order in which statements are executed in a program.
+
+    * By default, JavaScript runs code from top to bottom and left to right.
+
+    * Control flow statements let you change that order, based on conditions, loops or keywords
+
+    1. Default Flow
+        * Default flow executes code sequentially (from top to bottom / from left to right).
+
+        * Example
+
+            Flow sequentially: let x → let y → let z.
+              let x = 5;
+              let y = 6;
+              let z = x + y;  // 11
+
+    2. Conditional Control Flow
+        * Conditions let you make decisions using:
+
+            if
+            if...else
+            switch
+            ternary (? :)
+
+        * Example
+
+            Flow branches depending on conditions:
+              let text = "Unknown";
+              
+              if (age >= 18) {
+                text = "Adult";
+              } else {
+                text = "Minor";
+              }
+
+
+    3. Loops (Repetition Control Flow)
+        * Loops let you run code multiple times using:
+
+            for
+            while
+            do...while
+
+        * Example
+
+            Repeat flow until a condition (i < 5) is false.
+              for (let i = 0; i < 5; i++) {
+                text += "The number is " + i + "<br>";
+              }
+
+
+    4. Jump Statements
+        * Jump statements let you change the flow abruptly using:
+
+            break - exits a loop or switch
+            continue - skips the current loop iteration
+            return - exits from a function
+            throw - jumps to error handling
+
+        * Example
+
+            Terminate (break) the loop when the loop counter (i) is 3:
+              for (let i = 0; i < 10; i++) {
+                if (i === 3) { break; }
+                text += "The number is " + i + "<br>";
+              }
+
+
+    5. Function Flow
+        * Functions are callable and reusable code blocks
+
+        * Functions will run when they are called.
+
+        * Example
+
+            Function to compute the product of two numbers:
+              function myFunction(p1, p2) {
+                return p1 * p2;
+              }
+
+
+    6. JavaScript Is Single-Threaded
+        * JavaScript runs on a single thread.
+
+        * It can only do one thing at a time.
+
+        * Every task has to wait for the previous one to finish.
+
+        * This can freeze an application during slow operations (like file requests).
+
+        * JavaScript can also run code asynchronously.

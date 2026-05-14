@@ -1,0 +1,43 @@
+3. Js Break Statement
+
+    * The break statement "jumps out" of loops and switches.
+
+    * The break statement terminates the execution of a loop or a switch statement.
+
+    1. Break in Loops
+
+        * When break is encountered in a loop, the loop terminates immediately.
+
+        * The program control is transfered to the statements following the loop.
+
+        * No more loop iterations are executed
+
+        * Example:
+            for (let i = 0; i < 10; i++) {
+              if (i === 2) { break; }
+              text += "The number is " + i + "<br>";
+            }                   // The number is 0
+                                // The number is 1
+
+        * We can use break in switch too as u know
+
+
+    2. JavaScript Labels
+        * A label provides a name for a statement, or a block of statements, allowing statements to be referenced to, for program flow control, particularly in loops
+
+        * Syntax
+
+            // A label is an identifier followed by a colon (:).
+            labelname: statement;
+
+            // A label precedes a statement or a block of code.
+            labelname: {
+              statements
+            }
+
+
+    3. Labeled Break
+        * Syntax
+            break labelname;
+
+        * just know

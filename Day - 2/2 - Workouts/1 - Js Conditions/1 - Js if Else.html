@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Js Conditional Statements </h1>
+
+    <p> Time Based Greetings: </p>
+    <p id="demo"></p>
+
+    <script>
+        const time = new Date().getHours();
+
+        let greetings;
+        if(time < 10) {
+            greetings = "Good Morning";
+        } else if(time < 20) {
+            greetings = "Good Day";
+        } else {
+            greeting = "Good Evening";
+        }
+        document.getElementById('demo').innerHTML = greetings;
+        console.log(greetings);
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+8. Js Logical Operator
+
+    * Logical operators are used to combine boolean expressions.
+
+    * Logical operators can be used to modify the results of comparisons.
+
+    * Typically, you will use a comparison operator to check a condition, and a logical operator to combine conditions into more complex logic.
+
+
+    * Logical operators are used to determine the logic between variables or values.
+
+        * Given that x = 6 and y = 3, the table below explains the logical operators:
+
+            Oper 	Name 	Example 	            Try it
+            && 	    AND 	(x < 10 && y > 1)       is true 	
+            || 	    OR 	    (x === 5 || y === 5)    is false 	
+            ! 	    NOT 	!(x === y)              is true
+
+
+        1. JavaScript Logical AND
+
+            * The && operator returns true if both expressions are true, otherwise false:
+
+        2. JavaScript Logical OR
+
+            * The || operator returns true if one or both expressions are true, otherwise false:
+
+        3. JavaScript Logical NOT
+
+            * The NOT operator (!) returns true for false expressions and false for true expressions.
+
+        4. The Nullish Coalescing Operator (??)
+
+            * The ?? operator returns the right operand when the left operand is nullish (null or undefined), otherwise it returns the left operand.
+
+                * let name = null;     // missing
+                    let text = "missing";
+                    let result = name ?? text;
+                    
+                    document.getElementById("demo").innerHTML = "The name is " + result; 
+
+
+                * let name = 'hi';
+                    let text = "missing";
+                    let result = name ?? text;  // hi
+                    
+                    document.getElementById("demo").innerHTML = "The name is " + result; 

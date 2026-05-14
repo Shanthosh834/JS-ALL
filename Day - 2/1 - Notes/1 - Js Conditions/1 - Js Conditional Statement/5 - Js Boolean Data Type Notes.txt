@@ -1,0 +1,28 @@
+7. Js Boolean Data Type
+
+    * In JavaScript, a Boolean is a primitive data type that can only have one of two values:
+
+        * true or false
+
+    * Comparisons
+
+        * All JavaScript comparison operators (like ==, !=, <, >) return true or false from the comparison.
+
+        * Given that x = 5, the table below explains comparison:
+
+            Description 	Example 	Returns
+            Not equal to 	(x != 8) 	true
+            Greater than 	(x > 8) 	false
+            Less than 	    (x < 8) 	true
+            Equal to 	    (x == 8) 	false
+    
+        * Example
+            let x = 5;
+            
+            (x == 8); // equals false
+            (x != 8); // equals true
+
+    * in boolean anything without a value is false
+
+    let x = 0;
+    Boolean(x); // false

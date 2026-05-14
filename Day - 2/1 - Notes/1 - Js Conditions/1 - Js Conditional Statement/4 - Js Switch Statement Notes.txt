@@ -1,0 +1,54 @@
+6 Js Switch Statement
+
+    * Switch Control Flow
+
+    * Based on a condition, switch selects one or more code blocks to be executed.
+
+    * switch executes the code blocks that matches an expression.
+
+    * switch is often used as a more readable alternative to many if...else if...else statements, especially when dealing with multiple possible values
+
+    * Syntax
+        switch(expression) {
+          case x:
+            // code block
+            break;
+          case y:
+            // code block
+            break;
+          default:
+            // code block
+        }                       -> Reffer Workout Folder
+
+    * The getDay() method returns the weekday as a number between 0 and 6.
+
+    * (Sunday=0, Monday=1, Tuesday=2 ..)
+
+        1. The break Keyword
+            * When JavaScript reaches a break keyword, it breaks out of the switch block.
+
+            * This will stop the execution inside the switch block
+
+            * The break keyword is crucial for preventing a "fall-through."
+
+            * Without break, the code will continue to execute the next case blocks (and the default block if present) even if their values do not match the expression
+
+
+        2. The default Keyword
+            * The default keyword specifies a block of code to run if there is no case match.
+
+            * The default keyword is optional.
+
+            * The default can act as a fallback
+
+
+        3. Switching Details
+
+            * If multiple cases matches a case value, the first case is selected.
+
+            * If no matching cases are found, the program continues to the default label.
+
+            * If no default label is found, the program continues to the statement(s) after the switch.
+
+
+        

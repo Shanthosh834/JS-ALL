@@ -1,0 +1,53 @@
+* Use the JavaScript if statement to execute a block of code when a condition is true
+
+* there are 6 types of it:
+
+  1. Js if
+  2. Js if Else
+  3. Js Ternary
+  4. Js Switch
+  5. Js Boolean
+  6. Js Logical
+
+
+1. Js if Statement
+
+    * Use the JavaScript if statement to execute a block of code when a condition is true
+
+    * Syntax
+        if (condition) {
+          //  block of code to be executed if the condition is true
+        }
+
+    * Note that if is in lowercase letters. Uppercase letters (If or IF) will generate JavaScript error
+
+    * if (hour < 18) {
+      greeting = "Good day"; // Good day
+      } 
+
+
+2. Nested If
+
+    * You can use an if statement inside another if statement 
+  
+    * let age = 16;
+      let country = "USA";
+      let text = "You can Not drive!";
+      
+      if (country == "USA") {
+        if (age >= 16) {
+          text = "You can drive!";
+        }
+      }  // You can drive!
+
+    * Nested if statements can make your code more complex.
+
+    * A better solution is to use the logical AND operator
+
+    * let age = 16;
+      let country = "USA";
+      let text = "You can Not drive!";
+      
+      if (country == "USA" && age >= 16) {
+        text = "You can drive!";
+      }

@@ -1,0 +1,26 @@
+5. Js Ternary
+
+    * Ternary or Conditional Operator
+
+    * The conditional operator is a shorthand for writing conditional if...else statements.
+
+    * It is called a ternary operator because it takes three operands.
+
+    * Syntax:
+        (condition) ? expression1 : expression2
+
+    * The conditional (ternary) operator is the only JavaScript operator that takes three operands
+
+    * Explanation:
+        1. (condition) -> This is the Condition that evaluates Trur or False
+
+        2. ?            -> This operator sperates condition from expression
+
+        3. expression 1 -> The Value to return if the condition is true
+
+        4. :            -> The Operator seperating the expressions
+
+        5. expression 2 -> The Value to return if the condition is false
+
+    * let isMember = true;
+      let discount = isMember ? 0.2 : 0; // 0.2

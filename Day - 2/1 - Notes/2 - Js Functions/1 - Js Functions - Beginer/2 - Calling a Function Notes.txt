@@ -1,0 +1,83 @@
+2. Calling a function or Invoking Js Functions
+
+    * A JavaScript function runs when it is called.
+
+    * To call a function, write the name followed by parentheses like name()
+
+    1. Function Invocation
+        * The code inside a function is NOT executed when the function is defined.
+
+        * The code inside a function will execute when "something" invokes the function:
+
+            * When it is called from JavaScript code
+            * When an event occurs (a user clicks a button)
+            * Automatically (self invoked)
+
+        * It is common to use the term invoke, because a function can be invoked without being called.
+
+        * It is also common to use say:
+
+            * call a function
+            * call upon a function
+            * start a function
+            * execute a function
+
+        * The function below returns the text "Hello World".
+
+        * But it will not run before you call it
+          function sayHello() {
+            return "Hello World";
+          } // This prints nothing
+
+        * The code below calls the function.
+
+        * But it does not use the result.
+
+          function sayHello() {
+            return "Hello World";
+          }
+          
+          sayHello();
+
+        * To use the returned value, you can store it in a variable or display it.
+
+    2. Using the Returned Value
+
+        * When a function returns a value, you can store the value in a variable.
+
+        * Example
+            function sayHello() {
+              return "Hello World";
+            }
+
+            let greeting = sayHello();
+
+    3. Displaying the result
+        * just use
+            console.log(sayHello());
+
+        * document.getElementById("demo").innerHTML = sayHello();
+
+    4. Calling a Function Many Times
+
+        * You can call the same function whenever you need it.
+
+        * Example
+            function sayHello() {
+              return "Hello World";
+            }
+
+            let a = sayHello();
+            let b = sayHello();
+            let c = sayHello();
+
+    5. Calling vs Referencing a Function
+        * sayHello  -> reffers to Function itself
+
+        * sayHello()    -> reffers to Function result
+
+            function sayHello() {
+              return "Hello World";
+            }
+
+            let text = sayHello; // it just display the function as the text from function to }

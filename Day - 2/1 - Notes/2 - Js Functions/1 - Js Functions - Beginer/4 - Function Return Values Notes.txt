@@ -1,0 +1,90 @@
+4. Function Return
+
+    * A function can return a value back to the code that called it.
+
+    * The return statement is used to send a value out of a function
+
+        1. The return Statement
+
+            * When a function reaches a return statement, the function stops executing.
+
+            * The value after the return keyword is sent back to the caller.
+
+            * Example
+                function sayHello() {
+                  return "Hello World";
+                }
+
+                let message = sayHello();
+
+        2. Returning a Calculated Value
+            * Most functions return the result of a calculation or an operation.
+            
+            * Example
+                function multiply(a, b) {
+                  return a * b;
+                }
+
+                let result = multiply(4, 5);
+
+        3. Using Return Values in Expressions
+            * The returned value can be used anywhere a value is expected.
+
+            * You can use a function call inside another expression.
+
+            * Example
+                function multiply(a, b) {
+                  return a * b;
+                }
+
+                let total = multiply(2, 3) * 10;
+
+        4. Return Values
+            * A function can return any type of value (not only numbers).
+
+            * Example
+                function fullName(firstName, lastName) {
+                  return firstName + " " + lastName;
+                }
+
+                let name = fullName("John", "Doe");
+
+        5. Return Statements Stop Execution
+            * Code written after a return statement will NOT be executed.
+
+                * Example
+                    function multiply(a, b) {
+                      return "Done";
+                      // Next line will never run
+                      return a * b;
+                    }
+
+                    let result = multiply(4, 3);
+
+        6. Functions Without return
+            * If a function does not return a value, the return value will be undefined.
+
+            * Example
+                function multiply(a, b) {
+                  let x = a * b;
+                }
+
+                let result = multiply(4, 3); // The value of result is undefined.
+
+        7. Returning Values Early
+            * You can use return to stop a function early, based on a condition.
+
+            * Example
+                function checkAge(age) {
+                  if (age < 18) {
+                    return "Too young";
+                  }
+                  return "Access granted";
+                }
+
+                let answer = checkAge(16); // if below 18 Too young if after 18 Access granted
+        
+        8. Returning Values to HTML
+            * Returned function values are often used to update HTML content.
+
+            * document.getElementById("demo").innerHTML = toCelsius(77);

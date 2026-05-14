@@ -1,0 +1,32 @@
+5. Function Arguments
+
+    1. Parameters vs. Arguments
+
+        * In JavaScript, function parameters and arguments are distinct concepts:
+
+        * Parameters are the names listed in the function definition.
+
+        * Arguments are the real values passed to, and received by the function.
+
+              function multiply(a, b) {
+                return a * b;
+              }
+              
+              let result = multiply(4, 5);
+              
+              * In the example above:
+              
+                  a and b are parameters
+                  4 and 5 are arguments
+              
+              The argument 4 is assigned to the parameter a.
+              
+              The argument 5 is assigned to the parameter b.
+
+    2. The Arguments Object
+
+        * JavaScript functions have a built-in object called the arguments object.
+
+        * The argument object contains an array of the arguments used when the function was called (invoked).
+
+        * This way you can simply use a function to find (for instance) the highest value in a list of numbers:

@@ -1,4 +1,4 @@
-1. Beginer Functions
+1. What are functions
 
     * Functions are Code Blocks
 
@@ -91,3 +91,16 @@
                 }
 
                 // code here can NOT use carName 
+
+        7. Functions Used as Variables
+            * Functions can be used as variables, in all types of formulas, assignments, and calculations.
+
+            -> Reffer 2 Workout - 2 Js Functions - 1 Beginer
+
+        8. Function Input and Output
+            * The most useful functions work like this:
+
+                * Parameters - some values are sent to the function
+                * Arguments - some values are received by the function
+                * Function Code - some work is done inside the function
+                * Return Output - some value is returned from the function

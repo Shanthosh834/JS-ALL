@@ -1,0 +1,39 @@
+3. Function Parameters ( Function Input )
+
+    * Parameters allow you to pass (send) values to a function.
+
+    * Parameters are listed inside the parentheses in the function definition
+
+    * Example
+        function multiply(a, b) {
+          return a * b;
+        }
+
+        let result = multiply(4, 5);
+
+    4. Functions with One Parameter
+        * A function can have one parameter.
+
+        * Examples
+            function sayHello(name) {
+              return "Hello " + name;
+            }
+
+            let greeting = sayHello("John");
+
+    5. Functions with Multiple Parameters
+        * You can add as many parameters as you want, separated by commas.
+        
+        * Example
+            function fullName(firstName, lastName) {
+              return firstName + " " + lastName;
+            }
+
+            let name = fullName("John", "Doe");
+
+    6. Parameters vs. Arguments
+        * In JavaScript, function parameters and arguments are distinct concepts:
+
+        * Parameters are the names listed in the function definition.
+
+        * Arguments are the real values passed to, and received by the function

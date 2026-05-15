@@ -6,15 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Js Functions Beginer </h1>
+    <h1> Js Function Expression </h1>
 
-    <p> Functions that runs Hello World </p>
     <p id="demo"></p>
 
     <script>
-        function sayHello() {
+        const sayHello = function() {
             return 'Hello World';
-        }
+        };
 
         document.getElementById('demo').innerHTML = sayHello();
     </script>

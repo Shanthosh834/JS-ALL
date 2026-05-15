@@ -1,0 +1,5 @@
+7. Js Arrow Function
+
+    * Arrow Functions allow a shorter syntax for function expressions.
+
+    * You can skip the function keyword, the return keyword, and the curly brackets:

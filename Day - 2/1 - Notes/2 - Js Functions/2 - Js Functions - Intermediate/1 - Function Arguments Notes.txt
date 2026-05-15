@@ -23,10 +23,68 @@
               
               The argument 5 is assigned to the parameter b.
 
-    2. The Arguments Object
+    2. The Arguments Object     -> Reffer 2 Eorkouts - 2- Js Functions - 2- Function Intermediate
 
         * JavaScript functions have a built-in object called the arguments object.
 
         * The argument object contains an array of the arguments used when the function was called (invoked).
 
         * This way you can simply use a function to find (for instance) the highest value in a list of numbers:
+
+    3. The Order of Arguments Matters
+        * Arguments are assigned to parameters in the order they appear.
+
+        * Example
+            function subtract(a, b) {
+              return a - b;
+            }
+
+            let x1 = subtract(10, 5);
+            let x2 = subtract(5, 10); // 5 and -5
+
+    4. Arguments Can Be Variables
+        * Arguments do not have to be values. They can also be variables.
+
+        * Example
+            let x = 5;
+            let y = 6;
+
+            function multiply(a, b) {
+              return a * b;
+            }
+
+            multiply(x, y);
+
+    5. Argument Rules
+        * JavaScript function definitions do not specify data types for arguments.
+
+        * JavaScript functions do not perform type checking on the passed arguments.
+
+        * JavaScript functions do not check the number of arguments received
+
+    6. Missing Arguments
+        * If a function is called with fewer arguments than parameters, the missing values become undefined.
+
+        * Example
+            function multiply(a, b) {
+              return a * b;
+            }
+
+            multiply(4);
+
+            In the example above, b is undefined, so the result is NaN
+
+    7. Default Parameter Values
+        * You can now set a default value for a parameter.
+
+        * The default value is used if no argument is provided.
+
+        * Example
+
+            If y is not passed or undefined, then y = 10.
+            function myFunction(x, y = 10) {
+              return x + y;
+            }
+            myFunction(5); // 15
+
+    

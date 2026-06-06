@@ -45,7 +45,8 @@
             * Can have digits after First character
             * Cannot be a Keyword like const, let, etc
             * Are case-sensitive
-
+                * so let o; (keyword let and o is identifier )
+                * let o = 0; { keyword let and o is varaiable cause it has assignemnt }
     5. Js Operators
         * Js assignment opeerator assigns value to variables ( = )      -> Look At Workout - 3rd Js Syntax Folder - 3rd file
 

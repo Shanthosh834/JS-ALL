@@ -3,3 +3,42 @@
     * Arrow Functions allow a shorter syntax for function expressions.
 
     * You can skip the function keyword, the return keyword, and the curly brackets:
+        * Arrow function released in ES6  modern Js -> reffer workout function intermediate 
+
+    * With Arrow
+        * const multiply = (a, b) => a * b;
+
+        * const hello = () => "Hello World!";
+
+    * Parameter
+
+        * If a function has only one parameter, you can omit the parentheses:
+
+        * With Parantheses
+            * const square = (x) => x * x;
+
+        * Without Parantheses
+            * const square = x => x * x;
+
+            * Arrow Functions Return Value by Default
+
+            * If the function has only one statement that returns a value:
+
+            * You can remove the brackets and the return keyword:
+
+                * const hello = () => "Hello World!"; 
+
+                * This works only if the function has only one statement.
+
+                * You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
+                    * Example
+                        // This will return undefined
+                        const myFunction = (x, y) => { x * y };
+
+                        // This will return undefined
+                        const myFunction = (x, y) => return x * y;
+
+                        // This will return the expected result
+                        const myFunction = (x, y) => { return x * y };
+
+                * Arrow functions must be defined before they are used.

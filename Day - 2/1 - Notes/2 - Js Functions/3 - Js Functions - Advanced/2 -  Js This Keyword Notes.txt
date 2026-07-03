@@ -86,4 +86,4 @@
 
         console.log(student.getInfo()); 
         // "Shanthosh is 23" ✅
-        // this = student object
+        // this = student object 

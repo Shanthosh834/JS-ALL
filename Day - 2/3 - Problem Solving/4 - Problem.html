@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Reverse a number </title>
+</head>
+<body>
+    <h1>  Reverse a number </h1>
+
+    <script>
+        const numbers = num => {
+            let numm = num;
+            let reverse = 0;
+
+            while(numm > 0) {
+                let digit = numm % 10;
+                reverse = reverse * 10 + digit;
+                numm = Math.floor(numm / 10);
+            }
+            return reverse;
+        }
+        console.log(numbers(12345));
+    </script>
+</body>
+</html>

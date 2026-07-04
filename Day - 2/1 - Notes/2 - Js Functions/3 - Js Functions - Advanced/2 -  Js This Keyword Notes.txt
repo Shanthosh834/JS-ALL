@@ -9,7 +9,7 @@
 
         * 1. this in Global Scope
 
-            javascriptconsole.log(this); 
+            console.log(this); 
             // In browser → window object
             // this = window (global object)
 
@@ -27,7 +27,7 @@
 
         * 3. this in Regular Function
 
-            javascriptfunction show() {
+            function show() {
                 console.log(this);
                 // In browser → window object
                 // this = global window
@@ -37,7 +37,7 @@
 
         * 4. this in Arrow Function
 
-            javascriptconst person = {
+            const person = {
                 name: "Shanthosh",
 
                 // Regular function - this works!
@@ -74,7 +74,7 @@
 
     * IMPLE EXAMPLE TO REMEMBER:
 
-        javascriptconst student = {
+        const student = {
             name: "Shanthosh",
             age: 23,
 

@@ -1,1 +1,153 @@
 
+    1. Why Use Arrays?
+
+        * If you have a list of items (a list of car names, for example), storing the names in single variables could look like this:
+            
+            let car1 = "Saab";
+            let car2 = "Volvo";
+            let car3 = "BMW";
+
+        * However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?
+
+        * The solution is an array!
+
+    2.  Creating an Array
+
+        * Using an array literal is the easiest way to create a JavaScript Array.
+        * Syntax:
+            const array_name = [item1, item2, ...];  
+
+        * const cars = [
+              "Saab",
+              "Volvo",
+              "BMW"
+            ]; 
+
+    3. You can also create an empty array, and provide elements later:
+
+        * Example   -> reffer bais array workout
+
+            const cars = [];
+            cars[0]= "Saab";
+            cars[1]= "Volvo";
+            cars[2]= "BMW";
+
+    4. Using the JavaScript Keyword new
+
+        * The following example also creates an Array, and assigns values to it:
+
+        * Example   -> reffer workout New Keyword array
+
+            const cars = new Array("Saab", "Volvo", "BMW");
+
+    5. Accessing Array Elements
+
+        * You access an array element by referring to the index number:
+            const cars = ["Saab", "Volvo", "BMW"];
+            let car = cars[0];
+
+    6.  Changing an Array Element
+        * This statement changes the value of the first element in cars:
+            cars[0] = "Opel";
+        
+        * Example
+            const cars = ["Saab", "Volvo", "BMW"];
+            cars[0] = "Opel";
+
+    7. Display an Array
+
+        * In JavaScript, the full array can be displayed by referring to the array name:
+
+        * Example   -> reffer workout 4 - Display ab Array
+            const cars = ["Saab", "Volvo", "BMW"];
+
+            let text = cars;
+
+    8. Display an Array using JSON
+
+        * The full array can also be displayed using JSON.stringify():
+
+        * Example   -> reffer workout 5 - Array as Jsone
+            const cars = ["Saab", "Volvo", "BMW"];
+
+            let text = JSON-stringify(cars);
+
+    9. Arrays are Objects
+
+        * Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.
+
+        * But, JavaScript arrays are best described as arrays.
+
+        * Arrays use numbers to access its "elements". In this example, person[0] returns John:
+        
+        * Array:
+            const person = ["John", "Doe", 46]; we can even give numbers
+
+        * Objects use names to access its "members". In this example, person.firstName returns John:
+
+            const person = {firstName:"John", lastName:"Doe", age:46};
+            console.log(person.frstname);
+
+    10. Array Elements Can Be Objects
+
+        * JavaScript variables can be objects. Arrays are special kinds of objects.
+
+        * Because of this, you can have variables of different types in the same Array.
+
+        * You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array:
+
+            myArray[0] = Date.now;
+            myArray[1] = myFunction;
+            myArray[2] = myCars;
+
+    11. Array Properties and Methods
+
+        * The real strength of JavaScript arrays are the built-in array properties and methods:
+
+            cars.length   // Returns the number of elements
+            cars.sort()   // Sorts the array
+
+        1. The length Property
+
+            * The length property of an array returns the length of an array (the number of array elements).
+
+            * Example
+                const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                let length = fruits.length;
+
+            * Accessing the First Array Element
+            * Example
+                const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                let fruit = fruits[0];
+
+            * Accessing the Last Array Element
+
+            * Example
+                const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                let fruit = fruits[fruits.length - 1];
+
+        2. Looping Array Elements
+
+            * One way to loop through an array, is using a for loop:
+            
+            * Example
+                const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                let fLen = fruits.length;
+
+                let text = "<ul>";
+                for (let i = 0; i < fLen; i++) {
+                  text += "<li>" + fruits[i] + "</li>";
+                }
+                text += "</ul>";
+
+            * You can also use the Array.forEach() function:
+            * Example
+                const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+                let text = "<ul>";
+                fruits.forEach(myFunction);
+                text += "</ul>";
+
+                function myFunction(value) {
+                  text += "<li>" + value + "</li>";
+                } 

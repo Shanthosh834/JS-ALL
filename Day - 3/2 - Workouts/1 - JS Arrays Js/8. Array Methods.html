@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Array Methods </h1>
+
+    <script>
+        const fruits = ["Apple", "Orange", "Pineapple"];
+        let setlength = fruits.length = 2;
+        console.log(fruits);
+
+        let exactindex = fruits.at(1);
+        console.log(exactindex);
+
+        const joinelements = fruits.join(" * ");
+        console.log(joinelements);
+
+        const popp = fruits.pop(); // the last inserted element will be removed
+        console.log(popp);
+
+        const pushh = fruits.push("Grapes", "Pomoegranate");
+        console.log(pushh);
+        console.log(fruits);
+
+        const shiftt = fruits.shift();
+        console.log(shiftt);
+        console.log(fruits); // opposite to push
+
+        const unshiftt = fruits.unshift("Lemon");
+        console.log(unshiftt);
+        console.log(fruits);
+
+        const first = ["first1", "second1", "third1"];
+        const second = ["first2", "second2", "third2"];
+
+        const concatt = first.concat(second);
+        console.log(concatt);
+
+        const third = ["first3", "second3", "third3"];
+        const concatt2 = first.concat(second, third);
+        console.log(concatt2);
+
+        const con = first.concat("Fourth1");
+        console.log(con);
+        console.log(first);
+
+        const copyy = first.copyWithin(1,0);
+        console.log(copyy); // the last element will be overwritten not removed
+
+        const coppy2 = second.copyWithin(1,0,2);
+        console.log(coppy2);
+
+        const combined = [[1,2], [3,4], [5,6], [7,8]];
+        console.log(combined);
+        console.log(combined.flat());
+
+        const num = [1,2,3,4,5,6,];
+        const mapflatt = num.flatMap(x => [x,x * 10]);
+        console.log(mapflatt);
+
+        fruits.splice(2,0, "one" ,"two", "etc");
+        console.log(fruits);
+
+        fruits.splice(2,3, "oonnee", "ttwwoo");
+        console.log(fruits);
+
+        fruits.splice(0,2);
+        console.log(fruits);
+    </script>
+</body>
+</html>

@@ -6,9 +6,45 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Loop Through an Array </h1>
+    <h1> Looping Array With For Loop </h1>
+    <p id = 'for'></p>
+
+    <h1> Looping Array For Each </h1>
+    <p id ='foreach'> </p>
+
+    <p id ='foreachseperatefunc'> </p>
+
     <script>
-        
+        // Looping an array
+        const fruits = ["Apple", "Orange", "Pineapple"];
+
+        const len = fruits.length;
+
+        let text = "<ol>";
+
+            for(let i = 0; i < len; i++) {
+                text += "<li>" + fruits[i] + "</li>";
+            }
+            text += "</ol>";
+
+            document.getElementById('for').innerHTML = text;
+
+            // Looping an array for each
+            let textt = "<ul>";
+                fruits.forEach((val, ind, arr) => {
+                    textt += "<li>" + ind + val + arr + "</li>"
+                });
+                textt += "</ul>";
+            document.getElementById('foreach').innerHTML = textt; // If function used once use inline arraow func
+
+            let neew = "<ul>";
+                const myfun = (val, ind, arr) => {
+                    neew += "<li>" + ind + val + arr + "</li>";
+                };
+                fruits.forEach(myfun);
+             neew += "</ul>";
+            document.getElementById('foreachseperatefunc').innerHTML = neew; // if fucntion used many times use seperate funcvtion can create it
+                
     </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 
-1. JavaScript Array length
+1. JavaScript Array length  // reffer the workout array methods
 
     * The length property returns the length (size) of an array:
     * Example

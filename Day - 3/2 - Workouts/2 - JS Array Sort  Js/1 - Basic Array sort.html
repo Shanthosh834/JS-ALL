@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Basic Array Sort </h1>
+
+    <script>
+        const sortt = ["Box","Apple","Zeebra","Cat","Pillow"];
+        console.log(sortt.sort());
+
+        const reverse_an_array = ["One", "Two", "Three", "Four"];
+        console.log(reverse_an_array.reverse() + "  " +  reverse_an_array.sort());
+
+        const tosortedd = ["1", "2", "4", "3"];
+        console.log(tosortedd.toSorted());
+
+        const toreversee = ["1", "2", "4", "3"];
+        console.log(toreversee.toReversed());
+
+        const points = [40, 100, 1, 5, 25, 10];
+        points.sort((a, b) => {return a - b});
+        console.log(points);
+
+        const minn = ["12", "32", "4", "1"];
+        console.log(Math.min(...minn));
+
+        const maxx = ["65", "35", "78", "100"];
+        console.log(Math.max(...maxx));
+    </script>
+</body>
+</html>

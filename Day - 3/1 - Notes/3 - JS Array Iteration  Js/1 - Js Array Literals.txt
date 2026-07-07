@@ -1,1 +1,20 @@
-    1. 
+1. Looping Array Values
+
+    * JavaScript provides 3 simple statements for looping over each array items:
+        for ... of (loops over entries)
+        for ... in (loops over indexes)
+        forEach (myFunction)
+
+    * The for...of Loop (Recommended)
+
+    * The for...of statements hands you the array values.
+        // Create an Array
+        const cars = ['BMW', 'Volvo', 'Mini'];
+
+        // Iterate over the Array values
+        let text = "";
+        for (let x of cars) {
+          text += x + ",";
+        }
+
+        

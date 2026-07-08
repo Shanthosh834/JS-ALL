@@ -7,5 +7,45 @@
 </head>
 <body>
     <h1> Basic Array Literals </h1>
+
+    <script>
+        const Vehicles = ["Bus", "Bike", "Car", "Auto"];
+        let text = "";
+        for(const display of Vehicles) {
+            text += display + ',';
+        }
+        console.log(text);
+
+        const foreachh = ["Two", "One", "Three", "Four"];
+        let noerrorstr = "";
+        foreachh.forEach((value, index, array) => {
+            noerrorstr += index + " " + value + "\n"; // if html page only give br
+        });
+            console.log(noerrorstr);
+
+        const arr1 = [1, 2, 3, 4, 5];
+        const arr2 = arr1.map((val) => val * 10);
+        console.log(arr2);
+
+        const flatmapp = [1, 2, 3, 4, 5];
+        const flatmapp2 = flatmapp.flatMap((value) => [value, value * 10]);
+        console.log(flatmapp2);
+
+        const filterr = [12, 13, 14, 15, 1];
+        const filterr2 = filterr.filter((valuee) => valuee > 10);
+        console.log(filterr2);
+
+        const reducee = [1, 2, 3, 4, 5, 6, 7];
+        const reducee2 = reducee.reduce((total, val) => total + val, 1); // 1 is initial value
+        console.log(reducee2);
+
+        const everyy = [12, 13, 14, 15, 16];
+        const everyy2 = everyy.every((check) => check > 13);
+        console.log(everyy2);;
+
+        const somee = [10, 20, 30, 40, 50];
+        const somee2 = somee.some((val) => val === 10);
+        console.log(somee2);
+    </script>
 </body>
 </html>

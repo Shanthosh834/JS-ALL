@@ -46,6 +46,24 @@
         const somee = [10, 20, 30, 40, 50];
         const somee2 = somee.some((val) => val === 10);
         console.log(somee2);
+
+        const one = ["one", 1, "one", 11];
+        const two = ["two", 2, "two", 22];
+        const basicspread = [...one, ...two];
+        console.log(basicspread);
+
+        const copyanarray = [...one];
+        console.log(copyanarray);
+
+        const passargstofunc = Math.max(...everyy);
+        console.log(passargstofunc); 
+
+        let restt, a;
+        const arra = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        [a, ...restt] = arra;
+        console.log(a);
+        console.log(restt);
     </script>
 </body>
-</html>
+</html>`

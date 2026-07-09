@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MERGE TWO ARRAYS ALTERNATELY </title>
+</head>
+<body>
+    <h1> MERGE TWO ARRAYS ALTERNATELY </h1>
+    <script>
+        const array1 = [1, 2, 3, 4, 5];
+        const array2 = [6, 7, 8, 9, 10];
+        const result = [];
+        const result2 = [];
+
+        const maxlengths = Math.max(array1.length, array2.length);
+        for(let i=0; i < maxlengths; i++) {
+            if(i < array1.length) {
+                result.push(array1[i]);
+            }
+
+            if(i < array2.length) {
+                result.push(array2[i]);
+            }
+        }
+        console.log(result);
+
+        array1.forEach((value, index) => {
+            result2.push(array1[index]);
+            result2.push(array2[index]);
+        });
+        console.log(result2);
+    </script>
+</body>
+</html>

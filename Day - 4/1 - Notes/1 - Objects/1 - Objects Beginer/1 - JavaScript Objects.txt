@@ -1,1 +1,134 @@
-    1. JavaScript Objects
+
+1. JavaScript Objects
+
+    * Objects are variables that can store both values and functions.
+
+    * Values are stored as key:value pairs called properties.
+
+    * Functions are stored as key:function() pairs called methods.
+
+    * In real life, we can describe subjects as objects (a car, a person, a house)
+
+        * Car PropertiesL:	    Car Methods:
+          car.name = Fiat       car.start()
+          
+          car.model = 500       car.drive()
+          
+          car.weight = 850kg    car.brake()
+          
+          car.color = white     car.stop()
+
+            * Different cars have the same properties, but the property values can differ from car to car.
+
+Different cars have the same methods, but the methods can be performed at different times.
+
+        * Object Example
+
+        * This code example assigns many values (Fiat, 500, white) to an object named car:
+            const car = {
+              type: "Fiat",
+              model: "500",
+              color: "white"
+            };
+
+        * type, model, and color are properties
+
+        * "Fiat", "500", and "white" are property values
+
+2. Object Literal
+
+    * An object literal "literally" describes an object using a concise syntax with zero or more key:value pairs inside curly braces to describe all the object properties:
+        
+        {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}
+
+    * How to Create a JavaScript Object
+
+    * An object literal is the simplest and most common way to define a JavaScript object.
+
+        * All the examples below, create the same JavaScript object:
+    
+        * Example 1
+            // Create an Object
+            const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+        * Example 2
+            // Create an Object
+            const person = {
+              firstName: "John",
+              lastName: "Doe",
+              age: 50,
+              eyeColor: "blue"
+            };
+
+        * You can also create an empty object, and add the properties later:
+
+            * Example 3
+                // Create an Object
+                const person = {};
+
+                // Add Properties
+                person.firstName = "John";
+                person.lastName = "Doe";
+                person.age = 50;
+                person.eyeColor = "blue";
+
+        * You should declare objects with the const keyword.
+
+        * Using the new Keyword
+        
+        * Example 4
+
+        * Create a new JavaScript object using new Object():
+            // Create an Object
+            const person = new Object({
+              firstName: "John",
+              lastName: "Doe",
+              age: 50,
+              eyeColor: "blue"
+            });
+
+        * There is no need to use new Object().
+
+        * For readability, simplicity and speed, use an object literal instead.
+
+3. Object Properties
+
+    * You can access object properties in two ways:
+
+        * Dot notation
+        * Bracket notation
+
+    1. Dot Notation
+        objectName.propertyName
+        person.firstName;
+
+    2. Bracket Notation
+        objectName["propertyName"]
+        person["firstName"];
+
+
+4. JavaScript Object Methods
+
+    * Objects can also have methods.
+
+    * Object methods are actions that can be performed on objects.
+
+    * Functions are reusable or block of code that run, methods are a function inside a object or class
+
+    * Object methods are function definitions stored as property values:
+    
+    * Example
+        const person = {
+          firstName: "John",
+          lastName : "Doe",
+          age      : 50,
+          fullName : function() {
+            return this.firstName + " " + this.lastName;
+          }
+        };
+
+            Property:	Property Value:z
+            firstName	John
+            lastName	Doe
+            age	        50
+            fullName 	function() {return this.firstName + " " + this.lastName;}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Ways of objs can created </h1>
+    <script>
+        const person1 = {firstname:"John", lastname:"Doe", age:50, eyecolor:"blue"};
+        console.log(person1.lastname);
+
+        const person2 = {
+            firstname:"John",
+            lastname:"Doe",
+            age:50,
+            eyecolor:"blue"
+        };
+        console.log(person2.firstname);
+
+        const person3 = {};
+        // add properties later
+        person3.firstname = "John";
+        person3.lastname = "Doe";
+        person3.age = 50;
+        person3.eyecolor = "blue";
+
+        console.log(person3.age);
+
+        const person4 = new Object({
+            firstname:"John",
+            lastname:"Doe",
+            age:50,
+            eyecolor:"blue"
+        });
+        console.log(person4.eyecolor);
+
+        const bike = {
+            brand: "Honda",
+            model: "CBR",
+            year: 2021
+        };
+        console.log(bike["year"]);
+
+        const personn = {
+            firstname: "Shanthish",
+            lastname: "S",
+            fullname: fucntion() 
+        };
+    </script>
+</body>
+</html>

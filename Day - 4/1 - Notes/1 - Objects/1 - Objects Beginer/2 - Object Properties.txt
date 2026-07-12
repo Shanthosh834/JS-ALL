@@ -1,0 +1,128 @@
+
+1. Properties are key:value Pairs
+
+    * A JavaScript object is a collection of properties
+
+    * Properties can be changed, added, and deleted.
+
+    * Accessing JavaScript Properties
+
+        * You can access object properties in these ways:
+
+            Dot notation
+            Bracket notation
+            Expression
+
+        * Examples
+            // objectName.property
+            let age = person.age;
+
+            //objectName["property"]
+            let age = person["age"];
+
+            //objectName[expression]
+            let age = person[x];
+
+        1. Dot Notation
+
+            objectName.propertyName
+
+            person.firstname + " is " + person.age;
+
+        2. Bracket Notation
+
+            objectName["propertyName"]
+
+            person["firstname"] + " is " + person["age"];
+
+        * In general, dot notation is preferred for readability and simplicity.
+
+        * Bracket notation is necessary in some cases:
+
+            * Bracket notation is useful when the property name is stored in a variable:
+            
+            * Example
+                let n1 = "firstName";
+                let n2 = "lastName";
+
+                let name = person[n2] + " " + person[n2];
+
+2. Changing Properties
+
+    * You can change the value of a property:
+    
+    * Example
+        person.age = 10;
+
+
+3. Adding New Properties
+
+    * You can add a new property by simply giving it a value:
+    
+    * Example
+        person.nationality = "English"; 
+
+
+4. Deleting Properties
+
+    * The delete keyword deletes a property from an object:
+    
+    * Examples
+        const person = {
+          firstName: "John",
+          lastName: "Doe",
+          age: 50,
+        };
+
+
+        delete person.age;
+        const person = {
+          firstName: "John",
+          lastName: "Doe",
+          age: 50,
+        };
+
+        delete person["age"];
+
+    * The delete keyword deletes both the value and the property.
+
+    * After deleting, the property is removed. Accessing it will return undefined.
+
+
+5. Check if a Property Exists
+
+    * Use the in operator to check if a property exists in an object:
+
+    * Example
+        const person = {
+          firstName: "John",
+          lastName: "Doe"
+        };
+
+        let result = ("firstName" in person);
+
+
+6. Nested Objects
+
+    * Property values in an object can be other objects:
+    
+    * Example
+        myObj = {
+          name:"John",
+          age:30,
+          myCars: {
+            car1:"Ford",
+            car2:"BMW",
+            car3:"Fiat"
+          }
+        }
+
+    * You can access nested objects using the dot notation or the bracket notation:
+
+    * Examples
+        myObj.myCars.car2;
+        myObj.myCars["car2"];
+        myObj["myCars"]["car2"];
+        let p1 = "myCars";
+        let p2 = "car2";
+        myObj[p1][p2];

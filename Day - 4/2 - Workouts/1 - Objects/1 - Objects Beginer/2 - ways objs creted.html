@@ -46,8 +46,11 @@
         const personn = {
             firstname: "Shanthish",
             lastname: "S",
-            fullname: fucntion() 
+            fullname: function() {
+                return this.firstname + " " + this.lastname;
+            }
         };
+            console.log(personn.fullname());
     </script>
 </body>
 </html>

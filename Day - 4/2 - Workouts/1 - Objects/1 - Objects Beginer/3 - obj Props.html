@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Js Object Properties </h1>
+    <script>
+        const deletee = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 30,
+        };
+
+        delete deletee.age;
+        console.log(deletee.age);
+
+        delete deletee.firstName;
+        console.log(deletee.firstName);
+
+        const checkk = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 30,
+        };
+        let resulttt = ("firstName" in checkk);
+        console.log(resulttt);
+
+
+        const nestobj = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 30,
+            address: {
+                street: "123 Main St",
+                city: "Anytown",
+                state: "CA",
+                zip: "12345"
+            }
+        };
+        console.log(nestobj.address.zip);
+        console.log(nestobj.address["city"]);
+        console.log(nestobj["address"]["street"]);
+
+        let p1 = "address";
+        let p2 = "city";
+        console.log(nestobj[p1][p2]);
+    </script>
+</body>
+</html>

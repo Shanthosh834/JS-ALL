@@ -1,0 +1,13 @@
+SKIP ADVANCED ITERATIONS! ❌
+
+    Advanced Object Iterations:
+
+Object.groupBy() → ❌ Skip
+                   Very new, rarely used
+                   Not in fresher interviews
+
+Object.keys()   → ✅ Already learned!
+Object.values() → ✅ Already learned!
+Object.entries()→ ✅ Already learned!
+
+= YOU ALREADY KNOW WHAT'S NEEDED! 💯

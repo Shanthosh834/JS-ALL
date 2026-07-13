@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Js Object Constructor </h1>
+    <script>
+        function Person(name, age, color) {
+            this.name = name;
+            this.age = age;
+            this.color = color;
+            this.natonality = "Indian"; // Property Default Values
+            this.detials = function() { return this.name + " " + this.age } // Constructor Function Methods
+        }
+        const p1 = new Person("Sandy", 23, "blue");
+        const p2 = new Person("Jr", 22);
+        console.log(p1,p2);
+
+        const nation = new Person("dad", 45);
+        console.log(nation.natonality); // Property Default Values
+
+
+        // adding property to an obj
+        const addd = Person.gender = "male";
+        console.log(Person.gender);
+
+        // ading property to construcor
+        Person.prototype.status = "Single";
+        const pro = new Person("sandy");
+        console.log(pro.status);
+
+        // Constructor Function Methods
+        const funmethods = new Person("Sandy", 22);
+        console.log(funmethods.detials());
+        
+        // Adding a Method to an Object
+        p1.changecolour = function(colour) {
+            this.color = colour; 
+        }
+        p1.color = "pink";
+        console.log(p1.color);
+
+        
+
+    </script>
+</body>
+</html>

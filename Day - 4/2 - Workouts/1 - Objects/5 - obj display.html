@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Js Objects display </h1>
+    <script>
+        // [object][object]
+        const objobj = { name: "shanthosh"};
+        let no = objobj;
+        console.log(no);
+
+        // 1. display with obj prop
+        let text = objobj.lastname = "s";
+        console.log(text);
+
+        // 2. display with for in loop
+        const forin = {
+            firstname: "shanthosh",
+            lastname: "s",
+            age: 23
+        };
+        let textt = "";
+        for(let x in forin) {
+            textt += forin[x] + " ";
+        }
+        console.log(textt);
+
+        // 3. display with object.values()
+        let value = Object.values(forin);
+        let texttt = value.toString();
+        console.log(texttt);
+
+        // 3.1. values simplififed entries
+        let display = "";
+        for(let [name, amount] of Object.entries(forin)) {
+            display += name + ":" + amount + "\n";
+        }
+    console.log(display);
+
+    // 4. display with JSON.stringify()
+    let jsonn = JSON.stringify(forin);
+    console.log(jsonn);
+    </script>
+</body>
+</html>

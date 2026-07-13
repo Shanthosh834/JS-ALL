@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Js Object Methods </h1>
+    <script>
+        const basicmerthod = {
+            firstname: "shanthosh",
+            age: 26,
+            address: function() { // object method which is ofunction insdide obj
+                return this.age;
+            }
+        };
+        console.log(basicmerthod.address()); // accessing object method 
+
+
+        // addibng method to obj
+        const list = {
+            firstname: "shanthosh",
+            age: 26,
+        };
+
+        list.address = function() {
+            return this.firstname + " " + this.age;
+        }
+        console.log(list.address());
+
+        // adding js method
+        list.namee = function() {
+            return this.firstname.toUpperCase(); // or return (this.firstname).toUpperCase();
+        }
+        console.log(list.namee());
+    </script>
+</body>
+</html>

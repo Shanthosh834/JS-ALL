@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Js String Methods </h1>
+    <script>
+        // slice
+        let text = "Apple,Bannana, Kiwi";
+        console.log(text.slice(0, 5));
+        console.log(text.slice(7));
+        console.log(text.slice(-7));
+        console.log(text.slice(13, 7));
+
+        //substring
+        console.log(text.substring(0, 5));
+        console.log(text.substring(13, 7));
+
+        //trim
+        const trimm = "     Hello       ";
+        console.log(trimm);
+        console.log(trimm.trim());
+        console.log(trimm.trimStart());
+        console.log(trimm.trimEnd());
+
+        //replace
+        let text2 = " This is a String ";
+        console.log(text2.replace("String", "astr"));
+        console.log(text2.replace(/string/i, "astr")); // case sensistive issue solved wit i
+
+        let text3 = " This is a String String";
+        console.log(text3.replace("String", "astr"));
+        console.log(text3.replace(/String/g, "astr")); // case sensistive issue solved wit i
+
+        // replace all
+        let text4 = "This is a String String String";
+        console.log(text4.replaceAll(/string/gi, "astr"));
+
+        // split
+        let splll = "Hello Hi, comma,comna";
+        console.log(splll.split("")); // split into characters
+        console.log(splll.split(" ")); // split into words
+        console.log(splll.split(",")); // split by coma
+        console.log(splll.split()); // whole str as 1 array 1st element its not safe for emoji
+
+        let img = "👨‍👩‍👧‍👦";
+        console.log(img.split(""));
+        console.log(...img);
+
+        //concat
+        let p1 = "Hi";
+        let p2 = "Hello";
+        console.log(p1.concat(" ", p2));
+        console.log(p1 + " " + p2);
+
+        // search
+        const str = "Hello Shanthosh";
+            // includes - exists?
+            console.log(str.includes("Shanthosh")); // true ✅
+
+            // indexOf - position
+            console.log(str.indexOf("Shanthosh"));  // 6 ✅
+
+            // startsWith
+            console.log(str.startsWith("Hello"));   // true ✅
+
+            // endsWith
+            console.log(str.endsWith("Shanthosh")); // true ✅
+    </script>
+</body>
+</html>

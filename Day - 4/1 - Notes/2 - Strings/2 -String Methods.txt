@@ -59,3 +59,200 @@
             let part = str.substring(7, 13);
 
         * If you omit the second parameter, substring() will slice out the rest of the string.
+
+3. JavaScript String toUpperCase()
+        
+    * Example
+        let text1 = "Hello World!";
+        let text2 = text1.toUpperCase();
+            
+            
+4. JavaScript String toLowerCase()
+
+    * Example
+        let text1 = "Hello World!";       // String
+        let text2 = text1.toLowerCase();  // text2 is text1 converted to lower 
+
+    
+5. JavaScript String trim()
+
+    * The trim() method removes whitespace from both sides of a string:
+    
+    * Example
+        let text1 = "      Hello World!      ";
+        let text2 = text1.trim();
+
+    1. JavaScript String trimStart()
+
+        * The trimStart() method works like trim(), but removes whitespace only from the start of a string.
+        
+        * Example
+            let text1 = "     Hello World!     ";
+            let text2 = text1.trimStart();
+
+
+    2. JavaScript String trimEnd()
+
+        * The trimEnd() method works like trim(), but removes whitespace only from the end of a string.
+    
+        * Example
+            let text1 = "     Hello World!     ";
+            let text2 = text1.trimEnd();
+
+
+6. Replacing String Content
+
+    * The replace() method replaces a specified value with another value in a string:
+
+    * Example
+        let text = "Please visit Microsoft!";
+        let newText = text.replace("Microsoft", "W3Schools");
+
+    * The replace() method does not change the string it is called on.
+
+    * The replace() method returns a new string.
+
+    * The replace() method replaces only the first match
+
+    * If you want to replace all matches, use a regular expression with the /g flag set. See examples below.
+
+    * By default, the replace() method replaces only the first match:
+
+    * Example
+        let text = "Please visit Microsoft and Microsoft!";
+        let newText = text.replace("Microsoft", "W3Schools");
+
+    * By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work:
+    
+    * Example
+        let text = "Please visit Microsoft!";
+        let newText = text.replace("MICROSOFT", "W3Schools");
+
+    * To replace case insensitive, use a regular expression with an /i flag (insensitive):
+    
+    * Example
+        let text = "Please visit Microsoft!";
+        let newText = text.replace(/MICROSOFT/i, "W3Schools");
+
+    * Regular expressions are written without quotes.
+
+    * To replace all matches, use a regular expression with a /g flag (global match):
+    
+    * Example
+        let text = "Please visit Microsoft and Microsoft!";
+        let newText = text.replace(/Microsoft/g, "W3Schools");
+
+    * You will learn a lot more about regular expressions in the chapter JavaScript Regular Expressions.
+
+
+7. JavaScript String ReplaceAll()
+
+    * In 2021, JavaScript introduced the string method replaceAll():
+    
+    * Example
+        text = text.replaceAll("Cats","Dogs");
+        text = text.replaceAll("cats","dogs");
+
+    * The replaceAll() method allows you to specify a regular expression instead of a string to be replaced.
+
+    * If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.
+
+    * Example
+        text = text.replaceAll(/Cats/g,"Dogs");
+        text = text.replaceAll(/cats/g,"dogs");
+
+
+8. JavaScript String split()
+
+    * A string can be converted to an array with the split() method:
+    
+    * Syntax
+        text.split("")     // Split on characters
+        text.split(","(    // Split on commas
+        text.split(" ")    // Split on spaces
+        text.split("|")    // Split on pipe
+
+    * Examples
+
+    * If the parameter is "", the returned array will be an array of single characters:
+        let text = "Hi fox!";
+        text.split("")
+
+    * If the parameter is " ", the returned array will be an array of words:
+        let text = "The quick brown fox.";
+        text.split("")
+
+    * If the separator is omitted, the returned array will contain the whole string in index [0].
+        let text = "The quick brown fox.";
+        text.split("")
+
+
+9. Using split("") is unsafe
+
+    * Using split("") is unsafe for strings containing emojis or complex characters.
+
+    * The method splits by UTF-16 code units and will break surrogate pairs.
+
+    * split("") is always unsafe for emojis. It will slice right through them and create broken, corrupt code fragments.
+
+    * split(" ") is usually safe for words, even if they have emojis inside them, as long as the emoji is not glued right next to a space you are splitting on.
+    
+    * Summary of Options:
+
+        text.split("") is most unsafe
+        It breaks up 4-byte emojis (like 💩 becomes ['\uD83D', '\uDCA9']).
+        Spread [...text] is partially safe:
+        It works for simple emojis like 💩 or 🔥, but destroys complex emojis like 👨‍👩‍👧‍👦, 🧑‍⚕️ (doctor), or flags.
+        Intl.Segmenter is 100% Safe:
+        It handles every emoji, accent, and complex characters.
+
+    * Examples
+
+    * The spread operator breaks the family apart into individual people.
+        let text = "👨‍👩‍👧‍👦";
+
+        text.split("")
+
+        Intl.Segmenter keeps them together safely.
+        let text = "👨‍👩‍👧‍👦";
+
+            const segmenter = new Intl.Segmenter("en", {granularity:"grapheme"});
+            const myArr = Array.from(segmenter.segment(text)).map(s => s.segment);
+
+
+10. JavaScript String concat()
+
+    * concat() joins two or more strings:
+    
+    * Example
+        let text1 = "Hello";
+        let text2 = "World";
+        let text3 = text1.concat(" ", text2);
+
+    * The concat() method can be used instead of the plus operator. These two lines do the same:
+
+    * Example
+        text = "Hello" + " " + "World!";
+        text = "Hello".concat(" ", "World!");
+
+    * All string methods return a new string. They don't modify the original string.
+
+    * Formally said:
+
+    * Strings are immutable: Strings cannot be changed, only replaced.
+
+11. search
+    * used to search the strings
+
+    * Example:
+        // includes - exists?
+        str.includes("Shanthosh") // true ✅
+        
+        // indexOf - position
+        str.indexOf("Shanthosh")  // 6 ✅
+        
+        // startsWith
+        str.startsWith("Hello")   // true ✅
+        
+        // endsWith
+        str.endsWith("Shanthosh") // true ✅

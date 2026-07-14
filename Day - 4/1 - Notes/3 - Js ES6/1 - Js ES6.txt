@@ -1,0 +1,125 @@
+
+1. ✅ let, const (already know!)
+
+2. ✅ Arrow Functions (already know!)
+
+3. ✅ for/of (already know!)
+
+4. ✅ Array find() (already know!)
+
+5. Destructuring
+
+    1. Object Destructuring
+
+        * Destructuring assignment makes it easy to assign array values and object properties to variables.
+
+        * Example
+            // Create an Object
+            const person = {
+              firstName: "John",
+              lastName: "Doe",
+              age: 50,
+              eyeColor: "blue"
+            };
+
+            // Destructuring Assignment
+            let { firstName, age } = person;
+
+        * When destructuring an object, you must use the same name for the variables as the corresponding object keys (names).
+
+        * The order of the keys (names) does not matter.
+
+    2. Array Destructuring
+
+        * Destructuring assignment makes it easy to assign array values and object properties to variables.
+
+        * Example
+            // Create an Array
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+            // Destructuring Assignment
+            let [fruit1, fruit2] = fruits;
+
+
+6. The Spread (...) Operator
+
+    * The ... operator spreads an array or iterable into individual elements.
+
+    * Example
+    
+    * The ... operator can pass arguments to a function:
+        const numbers = [23,55,21,87,56];
+        let minValue = Math.min(...numbers);
+        let maxValue = Math.max(...numbers);
+
+    * Example
+
+    * The ... operator can be used to join arrays:
+        const arr1 = [1, 2, 3];
+        const arr2 = [4, 5, 6];
+        const arr3 = [...arr1, ...arr2];
+
+    * Example
+        const q1 = ["Jan", "Feb", "Mar"];
+        const q2 = ["Apr", "May", "Jun"];
+        const q3 = ["Jul", "Aug", "Sep"];
+        const q4 = ["Oct", "Nov", "Dec"];
+
+        const year = [...q1, ...q2, ...q3, ...q4];
+
+
+7. Default Parameter Values
+
+    * ES6 allows function parameters to have default values.
+
+    * Example
+        function myFunction(x, y = 10) {
+          // y is 10 if not passed or undefined
+          return x + y;
+        }
+        myFunction(5); // will return 15
+
+
+8. Function Rest Parameter
+
+    * The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:
+
+    * Example
+        function sum(...args) {
+          let sum = 0;
+          for (let arg of args) sum += arg;
+          return sum;
+        }
+
+        let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
+
+
+9. JavaScript Promises
+
+    * A JavaScript Promise is an object representing the completion or failure of an asynchronous operation and its values.
+
+    * It is a placeholder for a value that may not yet be available, providing a structured way to handle asynchronous code.
+
+    * Promise Syntax
+        const myPromise = new Promise(function(myResolve, myReject) {
+        // "Producing Code" (May take some time)
+
+          myResolve(); // when successful
+          myReject();  // when error
+        });
+
+        // "Consuming Code" (Must wait for a fulfilled Promise).
+        myPromise.then(
+          function(value) { /* code if successful */ },
+          function(error) { /* code if some error */ }
+        );
+
+    * Example Using a Promise
+        const myPromise = new Promise(function(myResolve, myReject) {
+          setTimeout(function() { myResolve("I love You !!"); }, 3000);
+        });
+
+        myPromise.then(function(value) {
+          document.getElementById("demo").innerHTML = value;
+        });
+

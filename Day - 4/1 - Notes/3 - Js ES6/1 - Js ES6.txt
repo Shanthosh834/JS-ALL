@@ -104,26 +104,63 @@
 
     * It is a placeholder for a value that may not yet be available, providing a structured way to handle asynchronous code.
 
+    * Think of ordering food.
+
+    * You order pizza.
+        You don't get it immediately.
+        You wait.
+        Later, either:
+        ✅ Pizza arrives (success).
+        ❌ Restaurant cancels (failure).
+
+    * A Promise works the same way.
+        
+    * Promise States
+        
+        * A Promise has 3 states:
+            Pending ⏳ → Still waiting.
+            Fulfilled ✅ → Success.
+            Rejected ❌ → Failed.
+
     * Promise Syntax
         const myPromise = new Promise(function(myResolve, myReject) {
         // "Producing Code" (May take some time)
 
-          myResolve(); // when successful
+          myResolve(); // when successful (or)
           myReject();  // when error
         });
 
-        // "Consuming Code" (Must wait for a fulfilled Promise).
-        myPromise.then(
-          function(value) { /* code if successful */ },
-          function(error) { /* code if some error */ }
-        );
+    * in promise if resolve or true go to the .then, if reject or false go the .catch
 
-    * Example Using a Promise
-        const myPromise = new Promise(function(myResolve, myReject) {
-          setTimeout(function() { myResolve("I love You !!"); }, 3000);
+    * Example 1: ( Basic )
+        const mypromise = new Promise((resolve, reject) => {
+            let success = false;
+            if(success) {
+            resolve(" Data Loaded!!! ");
+            } else {
+                reject(" Data Not Loaded!!! ");
+            }
+        });
+        mypromise.then((result) => {
+            console.log(result);
+        })
+        .catch((error) => {
+            console.log(error);
         });
 
-        myPromise.then(function(value) {
-          document.getElementById("demo").innerHTML = value;
+    * Example 2: ( With setTimeout )
+            const mypromise2 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                let success = true;
+                if(success) {
+                    resolve(" Data Loaded!!! ");
+                } else {
+                    reject(" Data Not Loaded!!! ");
+                }
+            }, 5000);
         });
-
+        mypromise2.then((result) => {
+            console.log(result);
+        }).catch((err) => {
+            console.log(err);
+        })

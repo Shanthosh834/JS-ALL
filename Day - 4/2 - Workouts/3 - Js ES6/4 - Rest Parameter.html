@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Js Rest Parameter </h1>
+    <script>
+        // rest parameter
+        /* const show = (a, b) => {
+            console.log(a,b);
+        };
+        show(1,2,3,4,5);  without rest parameter it only shows a and b other will be ommited
+        */
+        const show = (...args) => {
+            console.log(args);
+        }
+        show(1,2,3,4,5); // with rest parameter it shows all the values in an array
+    </script>
+</body>
+</html>

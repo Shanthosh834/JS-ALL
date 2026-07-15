@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Js ES6 Destruction </h1>
+    <script>
+        const obj = {
+            name: "Shanthosh",
+            gender: "male",
+        };
+        /**let namee = obj.name; // without desctruction
+        let genderr = obj.gender;
+
+        console.log(namee + " " + genderr);
+        **/
+
+        // Object Destrution
+        let { name : n, gender: g } = obj; // with destruction
+        console.log(n + "  " + g); // with estruction property name shouold given to {} if var needed see <-
+
+        // Array Destrution
+        const arrayy = ["Apple", "Pineapple", "Grapes", "Orange"];
+        let [f1, f2, f3] = arrayy;
+        console.log( f1 + " " + f2 +  " " + f3 + " "); // in array no need like taht we can keep varaible
+    </script>
+</body>
+</html>

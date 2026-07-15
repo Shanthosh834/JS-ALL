@@ -29,6 +29,8 @@
 
         * The order of the keys (names) does not matter.
 
+        * so in destruction the property name shoul be given inside {}
+
     2. Array Destructuring
 
         * Destructuring assignment makes it easy to assign array values and object properties to variables.
@@ -39,6 +41,8 @@
 
             // Destructuring Assignment
             let [fruit1, fruit2] = fruits;
+
+        * In Array Destruction we can keep as variable itself not like obj
 
 
 6. The Spread (...) Operator

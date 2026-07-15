@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Js Spread Operator </h1>
+    <script>
+        const numbers = [23, 55, 21, 87, 56];
+        console.log(Math.max.numbers); // not good
+        console.log(Math.max(...numbers));
+
+        const q1 = ["Jan", "Feb", "Mar"];
+        const q2 = ["Apr", "May", "Jun"];
+        const q3 = ["Jul", "Aug", "Sep"];
+        const q4 = ["Oct", "Nov", "Dec"];
+
+        console.log([...q1, ...q2]); // Join With Spread
+        const year = [...q1, ...q2, ...q3, ...q4];
+        console.log(year); // Merge multiple arrays
+    </script>
+</body>
+</html>

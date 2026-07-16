@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  </title>
+    <title> Count vowels in a string </title>
 </head>
 <body>
-    <h1>  </h1>
+    <h1> Count vowels in a string </h1>
     <script>
-
+        const stringg = ((str) => {
+            const match = str.match(/[aeiou]/gi); // g is global not only 1st letter all letters
+            return match ? match.length : 0; // i is for case sensitive
+        });
+        console.log(stringg("sss"));
     </script>
 </body>
 </html>

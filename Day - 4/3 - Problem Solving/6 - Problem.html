@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  </title>
+    <title> Destructure object </title>
 </head>
 <body>
-    <h1>  </h1>
+    <h1> Destructure object </h1>
     <script>
-
+        const user = {
+            name: "Shanthosh",
+            age: 23,
+            address: "india"
+        };
+        const {name, age, address} = user;
+        console.log(name, age, address);
     </script>
 </body>
 </html>

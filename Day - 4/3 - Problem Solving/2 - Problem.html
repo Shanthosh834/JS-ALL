@@ -10,15 +10,15 @@
     <script>
         const string = "madam";
         const palin = (str) => {
-            return str = str.split("").reverse().join("");
+            const reverse = str.split("").reverse().join("");
             if(reverse === str) {
-                console.log(" This Is Palindrome ");
+                console.log(reverse + " Is Palindrome ");
             } else {
-                console.log(" This Is NOt Palinderome " );
+                console.log(reverse + " This Is NOt Palinderome " );
             }
         };
-        console.log(palin("madam"));
-        console.log(palin("ksk"));
+        palin("madam");
+        palin("ksks");
     </script>
 </body>
 </html>

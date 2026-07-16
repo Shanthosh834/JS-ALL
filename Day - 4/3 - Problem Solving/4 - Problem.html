@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  </title>
+    <title> Count frequency of elements in array </title>
 </head>
 <body>
-    <h1>  </h1>
+    <h1> Count frequency of elements in array </h1>
     <script>
-
+        const frequency = {};
+        const freq = ((arr) => {
+            for(let num of arr) {
+                if(frequency[num]) {
+                    frequency[num]++;
+                } else {
+                    frequency[num] = 1;
+                }
+            }
+            return frequency;
+        });
+        console.log(freq(['1', '1', '2', '2']));
+        console.log(freq(['1', '2', '3', '4']));
     </script>
 </body>
 </html>

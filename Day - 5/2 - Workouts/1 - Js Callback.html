@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Js Callback </h1>
+    <script>
+        // Example Basic step: 1
+        const func = ((message) => {
+            console.log(message);
+        });
+        func(" Hello ");
+
+
+        // Example Basic step: 2
+        const func2 = ((message) => {
+            console.log(message);
+        });
+        const store = func2;
+        store(" Hello2 ");
+
+        
+        // Example Actual Callback
+        const greet = ((name, callback) => { // name = John, callback = display ( function )
+            callback("Hello " + name); // display(hello John);
+        });
+        const display = ((message) => { // message = hello john
+            console.log(message); // prints
+        });
+        greet("John", display); // runs first
+    </script>
+</body>
+</html>

@@ -59,33 +59,39 @@
         
         // Call calculate() with add as callback
         let result = calculate(5, 3, add);
-Note
 
-The callback runs immediately while calculate() is executing.
+    * Note
+      * The callback runs immediately while calculate() is executing.
 
-No asynchronous behavior is involved.
-Built-in Synchronous Callbacks
+      * No asynchronous behavior is involved.
 
-Many JavaScript methods use synchronous callbacks.
-Method 	Callback Called 	Asynchronous?
-forEach() 	Once for each element 	No
-map() 	Once for each element 	No
-filter() 	Once for each element 	No
-reduce() 	For each element 	No
-sort() 	To compare values 	No
-Timing Problems
 
-You cannot see a result before it is computed.
-Example
-let result;
+4. Built-in Synchronous Callbacks
 
-setTimeout(function() {
-  result = 5;
-}, 1000);
+  * Many JavaScript methods use synchronous callbacks.
 
-// What is result here?
+  * Method 	    Callback Called 	      Asynchronous?
+    forEach() 	Once for each element 	No
+    map() 	    Once for each element 	No
+    filter() 	  Once for each element 	No
+    reduce() 	  For each element 	      No
+    sort() 	    To compare values 	    No
 
-The result is undefined because the async code has not finished yet.
+
+5. Timing Problems
+
+  * You cannot see a result before it is computed.
+
+  * Example
+      let result;
+  
+      setTimeout(function() {
+        result = 5;
+      }, 1000);
+  
+      // What is result here?
+
+  * The result is undefined because the async code has not finished yet.
 
 REMOVE ADS
 The Callback Idea
